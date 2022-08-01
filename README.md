@@ -59,7 +59,7 @@ I haven't seen anyone implement it with discord so I did. :)
 
 ### Built With
 
-* [Discord.js](https://discord.js.org/#/)
+* [Lua](https://docs.cherax.vip/lua-documentation/api-reference)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
