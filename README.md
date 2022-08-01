@@ -48,10 +48,7 @@
 
 ![discord example][product-example]
 
-Omegle IP Geolocation information displayed through the developer console and through a discord channel.
-It is very simple to use, and can be customized to your liking. Created in JavaScript designed to run on chromium browsers.
-
-I haven't seen anyone implement it with discord so I did. :)
+All scripts will be updated with every patch.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -72,46 +69,20 @@ Download the file.
 
 ### Installation
 
-_Below is an example of how you can install this webhook!_
+_Below is an example of how you can install the lua._
 
-1. Get a free API Key at [https://ipgeolocation.io/](https://ipgeolocation.io/)
-  ```sh
-  Copy the api key (it will be a random string of characters)
-  ```
-2. Create a discord webhook
-   ```sh
-   Choose a channel to display messages > edit channel > integrations > webhooks > create webhook > name it anything > copy the webhook URL.
-   ```
-3. Open the *discord webhook for omegle.js* file in a code editor (or just notepad), and edit:
-   ```js
-    const apiKey = "IPGEOLOCATION_API_KEY_HERE";
-    const webhook = "DISCORD_WEBHOOK_URL_HERE"
-   ```
-4. Save the file then CTRL + A to copy all the code.
-  
+1. %appdata% > Roaming > Cherax > Lua
+2. Load with the Menu
+
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-*How to use it*
-1. On omegle.com before starting the video chat, press F12
-2. Go to the **Console** tab.
-3. Paste all the code into the console, press enter and start a video chat.
-4. Done!
-[![omegle example][product-screenshot]]
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 
 <!-- CONTACT -->
 ## Contact
 
-Discord - iiferedon#7337 or iiferedon#1337
+Discord - iiferedon#1337
 
-Project Link: [https://github.com/iiferedon/discord-webhook-omegle-ip-info-geolocation](https://github.com/iiferedon/discord-webhook-omegle-ip-info-geolocation)
+Project Link: [https://github.com/iiferedon/GTAV-Lua-Scripts](https://github.com/iiferedon/GTAV-Lua-Scripts)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
