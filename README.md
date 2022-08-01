@@ -7,10 +7,10 @@
     <img src="images/logo.png" alt="Logo" >
   </a>
 
-  <h3 align="center">Compilation of scripts for GTAV Online using the Cherax Lua Engine.</h3>
+  <h3 align="center">Compilation of scripts for GTAV Online.</h3>
 
   <p align="center">
-    powered by lua.
+    powered by the Cherax Lua Engine.
     <br />
     <a href="https://iiferedon.xyz"><strong>My Website »</strong></a>
     <br />
