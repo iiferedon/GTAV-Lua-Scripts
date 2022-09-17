@@ -1,5 +1,5 @@
 --iiferedon#1337
---Credit for method: Nathanoy#1827/Not_DerPaul#6118 [Xforce]
+
 g_lua.register();
 
 for i=0,31 do
