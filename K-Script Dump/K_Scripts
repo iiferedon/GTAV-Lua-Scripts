@@ -1,2 +1,0 @@
-ScriptLocal.SetInt("am_hunt_the_Beast", 603, 3) --set game state to block it
-					MISC.TERMINATE_ALL_SCRIPTS_WITH_THIS_NAME("am_hunt_the_Beast")
