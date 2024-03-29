@@ -4,7 +4,7 @@
 
 <br/>
 <div align="center">
-    <img src="images/logo.png" alt="Logo" >
+
   </a>
 
   <h3 align="center">Compilation of scripts for GTAV Online.</h3>
