@@ -51,3 +51,41 @@ function badsynctree()
 		g_util.add_toast("Invalid Player!")
 	end
 end
+
+
+function clear_entities(table_of_entities)
+	for i = 1, 2 do
+		local count = 0
+		local removed_entities = 0
+		for i, Entity in pairs(table_of_entities) do
+			if not PED.IS_PED_A_PLAYER(Entity) then
+				NETWORK.REQUEST_CONTROL_OF_ENTITY(Entity)
+				count = count + 1
+				if NETWORK.HAS_CONTROL_OF_ENTITY(Entity) then
+					UI.REMOVE_BLIP(UI.GET_BLIP_FROM_ENTITY(Entity))
+					ENTITY.SET_ENTITY_AS_MISSION_ENTITY(Entity, false, true)
+					ENTITY.DELETE_ENTITY(Entity)
+					if not ENTITY.IS_AN_ENTITY(Entity) then
+						removed_entities = removed_entities + 1
+						table_of_entities[i] = nil
+					end
+				end
+				if count % 16 == 15 then
+					system.yield(0)
+				end
+			end
+		end
+		if i == 1 and removed_entities ~= count then
+			system.yield(0)
+		end
+	end
+end
+
+function get_parent_of_attachments(Entity)
+	if ENTITY.IS_ENTITY_ATTACHED(Entity) then
+		return get_parent_of_attachments(ENTITY.GET_ENTITY_ATTACHED_TO(Entity))
+	else
+		return Entity
+	end
+end
+
