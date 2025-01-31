@@ -1,0 +1,10 @@
+function laggame()
+    local pid = g_util.get_selected_player()
+    ped = PLAYER.GET_PLAYER_COORDS(pid)
+    g_util.trigger_script_event(pid, {1463943751})
+    g_util.trigger_script_event(pid, {-1})
+    STREAMING.REQUEST_MODEL(g_util.joaat("vw_prop_vw_colle_prbubble"))
+    OBJECT.CREATE_AMBIENT_PICKUP(-1009939663, ped.x, ped.y, ped.z, pid, 1065353216, g_util.joaat("vw_prop_vw_colle_prbubble"), true, false)
+        g_util.yield()
+    OBJECT.CREATE_AMBIENT_PICKUP(-1009939663, ped.x, ped.y, ped.z, -pid, 2500, g_util.joaat("vw_prop_vw_colle_prbubble"), true, false)
+end
